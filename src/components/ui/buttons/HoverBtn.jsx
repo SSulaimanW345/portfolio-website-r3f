@@ -4,8 +4,8 @@ import React, { useRef } from 'react';
 import { motion, useMotionTemplate, useMotionValue, useSpring, AnimatePresence } from 'framer-motion';
 import { FiMousePointer } from 'react-icons/fi';
 
-const ROTATION_RANGE = 32.5;
-const HALF_ROTATION_RANGE = 10 / 2;
+const ROTATION_RANGE = 20;
+const HALF_ROTATION_RANGE = 2;
 
 export const HoverBtn = ({ btnText, className, tilt, content }) => {
   const ref = useRef(null);
@@ -50,14 +50,28 @@ export const HoverBtn = ({ btnText, className, tilt, content }) => {
         transformStyle: 'preserve-3d',
         transform,
       }}
+      whileInView={{ scale: [1, 1.5, 1] }} // Scale up and down
+      transition={{
+        duration: 1.5, // Time taken for one cycle
+      }}
       className={`absolute hidden sm:block sm:w-32 lg:text-xl lg:w-48 sm:text-xs md:text-xl-0.5 md:text h-14  rounded-xl bg-gray-900 ${className}`}>
-      <div
+      <motion.div
         style={{
           transform: 'translateZ(15px) ',
           transformStyle: 'preserve-3d',
         }}
+        whileInView={{ scale: [1, 1.2, 1] }} // Scale up and down
+        transition={{
+          duration: 1,
+          delay: 0.5,
+        }}
         className="absolute inset-1 grid place-content-center rounded-xl bg-gray-700  shadow-lg">
-        <div
+        <motion.div
+          whileInView={{ scale: [1, 1.2, 1] }}
+          transition={{
+            duration: 0.5,
+            delay: 1,
+          }}
           style={{
             transform: 'translateZ(10px)',
           }}
@@ -65,8 +79,8 @@ export const HoverBtn = ({ btnText, className, tilt, content }) => {
           <FlyoutLink href="#" FlyoutContent={content}>
             {btnText}
           </FlyoutLink>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </motion.div>
   );
 };
@@ -84,7 +98,7 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
           style={{
             transform: showFlyout ? 'scaleX(1)' : 'scaleX(0)',
           }}
-          className="absolute -bottom-2 -left-2  -right-2 h-1 origin-left scale-x-0 rounded-full bg-indigo-300 transition-transform duration-300 ease-out"
+          className="absolute -bottom-0 -left-2  -right-2 h-1 origin-left scale-x-0 rounded-full bg-indigo-300 transition-transform duration-300 ease-out"
         />
       </a>
       <AnimatePresence>
@@ -95,7 +109,7 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
             exit={{ opacity: 0, y: 15 }}
             style={{ translateX: '-50%' }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
-            className="absolute left-1/2 top-12 bg-white text-black">
+            className="absolute left-1/2 top-12 bg-white text-black pointer-events-none">
             <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent " />
             <div className="absolute left-1/2 top-0 h-4 w-4  -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white rounded-lg" />
             <div className="w-64 bg-white p-2 shadow-xl">

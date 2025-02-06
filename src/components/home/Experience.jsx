@@ -27,17 +27,16 @@ export const Experience = () => {
             {workExperiences.map((item, index) => (
               <motion.div
                 className={`md:w-1/2 md:p-2 lg:p-3 h-full ${index % 2 === 0 ? 'md:text-left text-left' : 'text-left md:mt-40 mt-10 '}`}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                initial={{ opacity: 1, x: index % 2 === 0 ? -100 : 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
+                transition={{ delay: 1 }}
                 key={index}>
                 <div
                   key={index}
                   // onClick={() => setAnimationName(item.animation.toLowerCase())}
                   // onPointerOver={() => setAnimationName(item.animation.toLowerCase())}
                   // onPointerOut={() => setAnimationName('idle')}
-                  className="work-content_container group">
+                  className="work-content_container group bg-[#0c0c0c]">
                   <div className="flex flex-col h-full justify-start items-center py-2">
                     <div className="work-content_logo">
                       <img className="w-full h-full rounded-md" src={item.icon} alt="" />

@@ -10,12 +10,12 @@ export const Testimonials = () => {
   return (
     <Section id={'testimonials'} title={'Testimonials'}>
       <div className="client-container">
-        <div className="bg-gray-950 w-full h-[250vh] mt-20" ref={targetRef}>
+        <div className="w-full h-[250vh] mt-20" ref={targetRef}>
           <div className="h-screen sticky  top-60 flex  justify-start overflow-hidden">
             <motion.div className="flex flex-row gap-[3vw] px-16" style={{ x }}>
               {clientReviews.map((item) => (
                 <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0, threshold: 0.99 }}>
-                  <div key={`review-${item.id}`} className="client-review w-[50vw]">
+                  <div key={`review-${item.id}`} className="client-review w-[50vw] max-w-[600px]">
                     <div>
                       <p className="text-white-800 font-light">{item.review}</p>
 

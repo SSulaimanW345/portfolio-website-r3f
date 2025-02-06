@@ -21,6 +21,7 @@ export const Skills = () => {
             <SkillCard
               spotlightUrl={'tension'}
               key={index}
+              index={index}
               className="relative p-6 w-30 h-30 flex flex-col items-center text-center bg-gray-950 shadow-md rounded-2xl border border-gray-600">
               <img src={skill.icon} alt="Skill Icon" className="w-12 h-12 m-2 rounded-md" />
               <h3 className="font-semibold text-xl mt-2 mb-3 text-white-600">{skill.name}</h3>

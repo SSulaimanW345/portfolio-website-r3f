@@ -24,7 +24,7 @@ export const ProjectPage = () => {
         <div className="md:w-[30vw] max-w-screen-md m-5 border-2 border-gray-600 p-1 rounded-md ">
           <MultiSelect options={projectOptions} onChange={handleSelectChange} />
         </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-12 gap-10 w-full">
           <ProjectListing myProjects={filteredProjects} />
         </div>
       </Section>

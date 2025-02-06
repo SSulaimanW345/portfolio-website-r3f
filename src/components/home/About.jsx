@@ -3,12 +3,20 @@ import Globe from 'react-globe.gl';
 import { BeamAnimation } from '../ui/other/BeamAnimation';
 import { ImageCarousel } from '../ui/other/ImageTab';
 import { Section } from '../layout/section/Section';
-
+import { motion } from 'framer-motion';
 export const About = () => {
   return (
     <Section id="about" title={'About Me'}>
       <div className="grid xl:grid-cols-2 xl:grid-rows-2 md:grid-cols-2 grid-cols-1 gap-5 h-full w-3/4 mx-auto ">
-        <div className="col-span-1 xl:row-span-1">
+        <motion.div
+          className="col-span-1 xl:row-span-1"
+          initial={{ x: -200, y: -100, opacity: 1 }}
+          whileInView={{ opacity: 1, x: 0, y: 0 }}
+          transition={{
+            duration: 1,
+            delay: 0.3,
+          }}
+          viewport={{ once: true }}>
           <div className="grid-container">
             <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
 
@@ -20,9 +28,17 @@ export const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="col-span-1 xl:row-span-1">
+        <motion.div
+          className="col-span-1 xl:row-span-1"
+          initial={{ x: 200, y: -100, opacity: 1 }}
+          whileInView={{ opacity: 1, x: 0, y: 0 }}
+          transition={{
+            duration: 1,
+            delay: 0.3,
+          }}
+          viewport={{ once: true }}>
           <div className="grid-container">
             <div className="w-full sm:h-[276px] h-fit object-contain">
               <BeamAnimation />
@@ -36,9 +52,17 @@ export const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="col-span-1 xl:row-span-1">
+        <motion.div
+          className="col-span-1 xl:row-span-1"
+          initial={{ x: -200, y: 100, opacity: 1 }}
+          whileInView={{ opacity: 1, x: 0, y: 0 }}
+          transition={{
+            duration: 1,
+            delay: 0.3,
+          }}
+          viewport={{ once: true }}>
           <div className="grid-container">
             <div className="rounded-3xl w-full sm:h-[266px] h-fit flex justify-center items-center">
               <ImageCarousel />
@@ -51,9 +75,17 @@ export const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="xl:col-span-1 xl:row-span-1">
+        <motion.div
+          className="xl:col-span-1 xl:row-span-1"
+          initial={{ x: 200, y: 100, opacity: 1 }}
+          whileInView={{ opacity: 1, x: 0, y: 0 }}
+          transition={{
+            duration: 1,
+            delay: 0.3,
+          }}
+          viewport={{ once: true }}>
           <div className="grid-container">
             <img src="assets/duolingo-arabic.jpeg" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
 
@@ -65,7 +97,7 @@ export const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </Section>
   );

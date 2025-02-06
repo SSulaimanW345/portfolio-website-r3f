@@ -71,7 +71,7 @@ export const clientReviews = [
     position: 'Project Manager at UrbanTech ',
     img: 'assets/male-avatar-3.png',
     review:
-      'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+      'I can’t say enough good things about Sulaiman. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
   },
   {
     id: 4,
@@ -79,7 +79,7 @@ export const clientReviews = [
     position: 'BPM Specialist at GBM',
     img: 'assets/male-avatar-4.png',
     review:
-      'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+      'Sulaiman was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
   },
   {
     id: 5,
