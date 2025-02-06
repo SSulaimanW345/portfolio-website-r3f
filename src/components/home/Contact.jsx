@@ -69,12 +69,12 @@ export const Contact = () => {
     <Section title={'Contact'} id="contact">
       {alert.show && <Alert {...alert} />}
       <div className="flex items-center justify-center flex-col">
-        <div className="relative min-h-screen flex items-center justify-center w-3/4 ">
+        <div className="relative min-h-screen w-full flex items-center justify-center md:w-3/4 ">
           <img src="/assets/terminal.png" alt="terminal-bg" className="absolute  min-h-screen" />
 
           <div className="contact-container">
             <h3 className="head-text">Let's talk</h3>
-            <p className="text-lg text-white-600 mt-3">
+            <p className="text-lg text-white-600 mt-20 sm:mt-3">
               Looking to hire a skilled developer who can bring value to your team and lead projects to success? Hire me
               for a great addition to your team and to drive impactful results!
             </p>

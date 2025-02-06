@@ -7,13 +7,12 @@ import { motion } from 'framer-motion';
 export const About = () => {
   return (
     <Section id="about" title={'About Me'}>
-      <div className="grid xl:grid-cols-2 xl:grid-rows-2 md:grid-cols-2 grid-cols-1 gap-5 h-full w-3/4 mx-auto ">
+      <div className="grid xl:grid-cols-2 xl:grid-rows-2 md:grid-cols-2 grid-cols-1 gap-5 h-full w-full sm:w-3/4 mx-auto overflow-hidden">
         <motion.div
           className="col-span-1 xl:row-span-1"
           initial={{ x: -200, y: -100, opacity: 1 }}
           whileInView={{ opacity: 1, x: 0, y: 0 }}
           transition={{
-            duration: 1,
             delay: 0.3,
           }}
           viewport={{ once: true }}>
@@ -35,7 +34,6 @@ export const About = () => {
           initial={{ x: 200, y: -100, opacity: 1 }}
           whileInView={{ opacity: 1, x: 0, y: 0 }}
           transition={{
-            duration: 1,
             delay: 0.3,
           }}
           viewport={{ once: true }}>
@@ -59,7 +57,6 @@ export const About = () => {
           initial={{ x: -200, y: 100, opacity: 1 }}
           whileInView={{ opacity: 1, x: 0, y: 0 }}
           transition={{
-            duration: 1,
             delay: 0.3,
           }}
           viewport={{ once: true }}>
@@ -82,7 +79,6 @@ export const About = () => {
           initial={{ x: 200, y: 100, opacity: 1 }}
           whileInView={{ opacity: 1, x: 0, y: 0 }}
           transition={{
-            duration: 1,
             delay: 0.3,
           }}
           viewport={{ once: true }}>

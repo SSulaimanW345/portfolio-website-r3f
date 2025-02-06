@@ -32,9 +32,10 @@ export const SkillCard = ({ children, spotlightUrl, index }) => {
       className="relative p-4 rounded-md border-2 border-black-300 bg-black-200"
       initial={{ x: -50, opacity: 0 }}
       transition={{
-        delay: index * 0.3,
+        delay: index * 0.1,
       }}
-      whileInView={{ opacity: 1, x: 0 }}>
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ amount: 0.2 }}>
       <div
         onMouseMove={handleMouemove}
         onMouseEnter={() => setIsHovered(true)}

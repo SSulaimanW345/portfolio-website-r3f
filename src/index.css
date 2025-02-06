@@ -44,6 +44,9 @@ body {
   .nav-sidebar {
     @apply absolute left-0 right-0 bg-black-200 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
   }
+  .nav-sidebar a {
+    @apply w-1/2;
+  }
 
   .text-gray_gradient {
     @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
@@ -64,7 +67,7 @@ body {
 
   /* hero section */
   .hero_tag {
-    @apply text-center xl:text-6xl md:text-4xl  text-2xl font-generalsans font-black !leading-normal;
+    @apply text-center xl:text-6xl md:text-4xl  text-xl font-generalsans font-black !leading-normal;
   }
 
   /* about section */

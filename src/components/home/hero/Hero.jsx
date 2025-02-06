@@ -13,14 +13,14 @@ export const Hero = () => {
         </p>
         <p className="hero_tag text-gray_gradient lg:hidden">Building Products & Brands</p>
       </div>
-      <div className="absolute -translate-x-1/2 top-1/2 left-1/2 -translate-y-1/2 w-1/2 h-1/2  intro-animation">
+      <div className="absolute -translate-x-1/2 top-1/2 left-1/2 -translate-y-1/2 w-full sm:w-1/2 h-1/2  intro-animation">
         <HeroCanvas />
       </div>
       <div className="absolute -translate-x-1/2 bottom-2 left-1/2 -translate-y-1/2">
         <HeroButtons />
       </div>
       <HeroContent />
-      <div className="fixed top-28 right-4 z-50">
+      <div className="hidden sm:block fixed top-28 right-4 z-50">
         <ResumeDownloadButton />
       </div>
     </section>

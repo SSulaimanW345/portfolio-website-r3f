@@ -4,30 +4,42 @@ export const navLinks = [
     name: 'Home',
     href: '/#home',
     showOnProjects: true,
+    isDesktop: true,
   },
   {
     id: 2,
     name: 'About',
     href: '/#about',
     showOnProjects: false,
+    isDesktop: true,
   },
   {
     id: 3,
     name: 'Work',
     href: '/#work',
     showOnProjects: false,
+    isDesktop: true,
   },
   {
     id: 4,
     name: 'Contact',
     href: '/#contact',
     showOnProjects: false,
+    isDesktop: true,
   },
   {
     id: 5,
     name: 'Project',
     href: '/projects',
     showOnProjects: false,
+    isDesktop: true,
+  },
+  {
+    id: 6,
+    name: 'Download CV',
+    href: '/assets/NewJOBCV.pdf',
+    showOnProjects: false,
+    isDesktop: false,
   },
 ];
 export const projectOptions = [
@@ -87,7 +99,7 @@ export const clientReviews = [
     position: 'Product Manager at MindCloud',
     img: 'assets/male-avatar-5.png',
     review:
-      'I’ve had the pleasure of working with Sulaiman, and I can confidently say he is an exceptional junior developer. His ability to debug complex issues is truly impressive—he has a keen eye for spotting problems and finding efficient solutions. Beyond his technical skills, Sulaiman is a natural leader, managing and guiding other developers with confidence and clarity. He’s also a fantastic team player, always ready to collaborate and support his teammates. With his dedication and talent, I have no doubt he’ll continue to grow and make a significant impact in the industry!',
+      'I’ve had the pleasure of working with Sulaiman, and I can confidently say he is an exceptional junior developer. His ability to debug complex issues is truly impressive. Beyond his technical skills, Sulaiman is a natural leader, managing other developers with confidence and clarity. He’s also a fantastic team player, always ready to collaborate and support his teammates.',
   },
 ];
 

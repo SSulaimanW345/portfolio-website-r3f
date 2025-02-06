@@ -5,17 +5,19 @@ import { clientReviews } from '../../constants/index.js';
 export const Testimonials = () => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: targetRef });
-  const x = useTransform(scrollYProgress, [0, 1], ['0%', '-70%']);
+  const x = useTransform(scrollYProgress, [0, 1], ['0%', '-100%']);
 
   return (
     <Section id={'testimonials'} title={'Testimonials'}>
       <div className="client-container">
         <div className="w-full h-[250vh] mt-20" ref={targetRef}>
-          <div className="h-screen sticky  top-60 flex  justify-start overflow-hidden">
+          <div className="h-screen sticky  top-1/2 flex  justify-start overflow-hidden">
             <motion.div className="flex flex-row gap-[3vw] px-16" style={{ x }}>
               {clientReviews.map((item) => (
                 <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0, threshold: 0.99 }}>
-                  <div key={`review-${item.id}`} className="client-review w-[50vw] max-w-[600px]">
+                  <div
+                    key={`review-${item.id}`}
+                    className="client-review w-[50vw] min-w-[350px] sm:min-w-[640px] max-w-[600px]">
                     <div>
                       <p className="text-white-800 font-light">{item.review}</p>
 

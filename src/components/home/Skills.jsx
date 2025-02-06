@@ -16,7 +16,7 @@ export const Skills = () => {
   return (
     <Section id={'Skills'} title={'My Skills'}>
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-3/4 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-3/4 overflow-hidden">
           {skills.map((skill, index) => (
             <SkillCard
               spotlightUrl={'tension'}

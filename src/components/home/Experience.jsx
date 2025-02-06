@@ -6,9 +6,9 @@ export const Experience = () => {
     <Section id={'work'} title={'Work Experience'}>
       <div className="w-full text-white-600 text-center">
         <div className="w-full md:flex md:flex-col items-center px-4">
-          <div className="relative max-w-screen-lg md:flex md:flex-row ">
+          <div className="relative max-w-screen-lg md:flex md:flex-row overflow-hidden">
             <motion.div
-              className="absolute top-5 w-0.5 h-50  bg-green-500 md:left-1/2 "
+              className="absolute top-5 w-0.5 h-50 hidden md:block bg-green-500 left-1/2 "
               initial={{ height: 0 }}
               animate={{ height: '100%' }}
               transition={{ duration: 5, ease: 'easeInOut' }}>
@@ -29,7 +29,7 @@ export const Experience = () => {
                 className={`md:w-1/2 md:p-2 lg:p-3 h-full ${index % 2 === 0 ? 'md:text-left text-left' : 'text-left md:mt-40 mt-10 '}`}
                 initial={{ opacity: 1, x: index % 2 === 0 ? -100 : 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1 }}
+                transition={{ delay: 0.2 }}
                 key={index}>
                 <div
                   key={index}
@@ -71,12 +71,12 @@ export const Experience = () => {
                   </div>
                 </div>
                 <motion.div
-                  className={`absolute  w-4 h-0.5 z-50 bg-green-500 ${index % 2 === 0 ? 'md:right-1/2 top-1/4 ' : 'md:left-1/2 top-3/4'} `}
+                  className={`absolute hidden md:block  w-4 h-0.5 z-50 bg-green-500 ${index % 2 === 0 ? 'md:right-1/2 top-1/4 ' : 'md:left-1/2 top-3/4'} `}
                   initial={{ width: 0 }}
                   animate={{ width: '4%' }}
                   transition={{ duration: 5, ease: 'easeInOut' }}>
                   <motion.div
-                    className={`absolute w-0.5 h-0.5 ${index % 2 === 0 ? 'md:left-0 right-0 ' : 'right-0'}   bg-green-500 rounded-full `}
+                    className={`absolute hidden md:block w-0.5 h-0.5 ${index % 2 === 0 ? 'md:left-0 right-0 ' : 'right-0'}   bg-green-500 rounded-full `}
                     initial={{ scale: 2, opacity: 1 }}
                     animate={{ scale: 5, opacity: 1 }}
                     transition={{ duration: 1.5, ease: 'easeOut' }}></motion.div>

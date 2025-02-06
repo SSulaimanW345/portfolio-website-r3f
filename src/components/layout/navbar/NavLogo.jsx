@@ -14,7 +14,7 @@ export const NavLogo = () => {
         <motion.div className="absolute inset-0 rounded-md " style={{ background: rotatingBg }} />
         <a
           href="/"
-          className="relative text-neutral-400 font-bold text-xl hover:text-white transition-colors bg-black px-2 py-2 rounded-lg z-10">
+          className="relative whitespace-nowrap text-neutral-400 font-bold text-xl hover:text-white transition-colors bg-black px-2 py-2 rounded-lg z-10">
           SS Waleed
         </a>
       </div>

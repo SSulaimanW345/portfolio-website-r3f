@@ -32,7 +32,7 @@ export const ProjectListing = ({ myProjects }) => {
                 duration: 0.5,
               },
             }}
-            viewport={{ amount: 0.5 }}>
+            viewport={{ amount: 0.2 }}>
             <Project project={project} onClickHandler={modalClickHandler} />
           </motion.div>
         </div>

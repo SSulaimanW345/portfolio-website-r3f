@@ -8,10 +8,10 @@ const borderVariants = {
 };
 export const NavButton = ({ item, index, onClick }) => {
   return (
-    <a href={item.href} className="nav-li_a" onClick={onClick}>
+    <a href={item.href} className="nav-li_a" onClick={onClick} download={item.isDesktop ? undefined : 'resume.pdf'}>
       <motion.button
         key={item.id}
-        className="nav-li relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 dark:after:bg-green 
+        className="nav-li whitespace-nowrap relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 dark:after:bg-green 
         after:bg-green-500 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
         initial="initial"
         variants={borderVariants}

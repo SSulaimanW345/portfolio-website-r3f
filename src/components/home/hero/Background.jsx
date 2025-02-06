@@ -10,7 +10,7 @@ export const Background = () => {
   useEffect(() => {
     const updateGrid = () => {
       const width = window.innerWidth;
-      const height = window.innerHeight - 100;
+      const height = window.innerHeight;
       setNumCols(Math.floor(width / squareSize));
       setNumRows(Math.floor(height / squareSize));
     };
@@ -22,7 +22,9 @@ export const Background = () => {
 
   return (
     <motion.div
-      className={'h-[100vh] absolute inset-0 flex overflow-clip flex-wrap justify-center items-center gap-2  '}>
+      className={
+        'h-[100vh] absolute inset-0 flex overflow-clip flex-wrap justify-center items-center gap-1 lg:gap-2  '
+      }>
       {Array.from({ length: numCols * numRows }).map((_, index) => {
         const randomDelay = Math.random() * 1.5;
         return (
