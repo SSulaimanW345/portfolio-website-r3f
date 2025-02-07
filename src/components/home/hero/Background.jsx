@@ -36,7 +36,16 @@ export const Background = () => {
               backgroundColor: '#439c3e',
               scale: 1.2,
               animate: { backgroundColor: '#101113', transition: { duration: 0.6, delay: 0.2 } },
-            }} // Blue on hover
+            }}
+            whileTap={{
+              scale: 1.4,
+              backgroundColor: '#439c3e',
+              transition: { duration: 0.2 },
+            }}
+            animate={{
+              backgroundColor: '#101113', // Fades back to original
+              transition: { duration: 1, delay: 0.2 },
+            }}
             whileInView={{ scale: [0.8, 1.2, 1], transition: { duration: 1, delay: randomDelay, ease: 'easeInOut' } }}
           />
         );

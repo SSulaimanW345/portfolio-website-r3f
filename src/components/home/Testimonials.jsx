@@ -17,7 +17,7 @@ export const Testimonials = () => {
                 <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0, threshold: 0.99 }}>
                   <div
                     key={`review-${item.id}`}
-                    className="client-review w-[50vw] min-w-[350px] sm:min-w-[640px] max-w-[600px]">
+                    className="client-review w-[50vw] bg-[#0c0c0c] min-w-[350px] sm:min-w-[640px] max-w-[600px]">
                     <div>
                       <p className="text-white-800 font-light">{item.review}</p>
 
