@@ -11,7 +11,7 @@ export const Testimonials = () => {
     <Section id={'testimonials'} title={'Testimonials'}>
       <div className="client-container">
         <div className="w-full h-[250vh] mt-20" ref={targetRef}>
-          <div className="h-screen sticky  top-1/2 flex  justify-start overflow-hidden">
+          <div className="h-screen sticky  top-32 sm:top-1/2 flex  justify-start overflow-hidden">
             <motion.div className="flex flex-row gap-[3vw] px-16" style={{ x }}>
               {clientReviews.map((item) => (
                 <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0, threshold: 0.99 }}>
