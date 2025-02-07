@@ -16,7 +16,7 @@ export const Hero = () => {
       <div className="absolute -translate-x-1/2 top-1/2 left-1/2 -translate-y-1/2 w-full sm:w-1/2 h-1/2  intro-animation">
         <HeroCanvas />
       </div>
-      <div className="absolute -translate-x-1/2  bottom-5 left-1/2 -translate-y-1/2">
+      <div className="absolute -translate-x-1/2 bottom-10 sm:bottom-5 left-1/2 -translate-y-1/2">
         <HeroButtons />
       </div>
       <HeroContent />
