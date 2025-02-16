@@ -521,7 +521,7 @@ export const myProjects = [
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
-    cubicleRadius: isSmall ? 8 : isMobile ? 8 : isTablet ? 8 : 9,
+    cubicleRadius: isSmall ? 10 : isMobile ? 10 : isTablet ? 8 : 9,
     deskFov: isSmall ? 70 : isMobile ? 70 : isTablet ? 60 : 55,
   };
 };
