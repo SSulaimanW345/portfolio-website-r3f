@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 export const About = () => {
   return (
     <Section id="about" title={'About Me'}>
-      <div className="grid xl:grid-cols-2 xl:grid-rows-2 md:grid-cols-2 grid-cols-1 gap-5 h-full w-full sm:w-3/4 mx-auto overflow-hidden">
+      <div className="grid xl:grid-cols-2 xl:grid-rows-2 md:grid-cols-2 grid-cols-1 gap-5 h-full w-full lg:w-3/4 mx-auto overflow-hidden">
         <motion.div
           className="col-span-1 xl:row-span-1"
           initial={{ x: -200, y: -100, opacity: 1 }}

@@ -12,7 +12,7 @@ export const BeamAnimation = () => {
   const div7Ref = useRef(null);
   return (
     <div
-      className="relative flex w-4/5 md:w-full max-w-[500px] mx-auto items-center justify-center overflow-hidden rounded-lg  bg-background lg:p-10 md:shadow-xl"
+      className="relative flex w-4/5 md:w-full max-w-[500px] mx-auto items-center justify-center overflow-hidden rounded-lg  bg-background lg:p-10 "
       ref={containerRef}>
       <div className="flex h-4/5 w-full flex-col items-stretch justify-between gap-8">
         <div className="flex flex-row items-center justify-between">

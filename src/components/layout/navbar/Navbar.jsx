@@ -8,8 +8,8 @@ export const Navbar = ({ children }) => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="fixed top-2 left-2 right-2 z-50 bg-black/90 border-gray-600 border-2 rounded-md">
-      <div className="max-w-7xl mx-auto">
+    <header className="fixed top-2 left-2 right-2 z-50 rounded-md">
+      <div className="max-w-4xl mx-auto bg-[#2D3239] bg-opacity-70 rounded-md">
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <NavLogo />
           <button

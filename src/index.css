@@ -15,7 +15,7 @@
 }
 
 body {
-  background: #0c0c0c;
+  background: #24282E;
   font-family: 'General Sans', sans-serif;
 }
 
@@ -25,7 +25,7 @@ body {
   }
 
   .head-text {
-    @apply sm:text-4xl text-2xl font-semibold text-gray_gradient;
+    @apply sm:text-4xl text-2xl font-semibold text-[#F5FCE9] ;
   }
 
   .nav-ul {
@@ -33,7 +33,7 @@ body {
   }
 
   .nav-li {
-    @apply text-neutral-400 hover:text-white font-generalsans p-5 max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5  border-gray-600 border-2 border-b-4 rounded-md;
+    @apply  hover:text-white font-generalsans p-5 max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2.5 max-sm:px-5  border-[#5A6472] border-2 border-b-2 rounded-md;
     
   }
 
@@ -72,15 +72,15 @@ body {
 
   /* about section */
   .grid-container {
-    @apply w-full h-full border border-black-300 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    @apply w-full h-full border border-black-300 bg-[#2D3239] rounded-lg sm:p-7 p-4 flex flex-col gap-5 bg-opacity-70;
   }
 
   .grid-headtext {
-    @apply text-xl font-semibold mb-2 text-white font-generalsans;
+    @apply text-xl font-semibold mb-2 text-[#F5FCE9] font-generalsans ;
   }
 
   .grid-subtext {
-    @apply text-[#afb0b6] text-base font-generalsans;
+    @apply text-[#afb0b6] text-base font-generalsans pl-2 border-l-4 border-[#7EB11B] rounded-md;
   }
 
   .copy-container {
@@ -105,11 +105,11 @@ body {
   } */
 
   .client-review {
-    @apply rounded-lg md:p-10 p-5;
+    @apply relative rounded-lg md:p-8 p-3 border border-[#5A6472] bg-[#2D3239] bg-opacity-70;
   }
 
   .client-content {
-    @apply flex lg:flex-row flex-col justify-between lg:items-center items-start gap-5 mt-7;
+    @apply flex  flex-col justify-between  items-start gap-5 mb-7;
   }
 
   /*  work experience section */
@@ -126,7 +126,7 @@ body {
   }
 
   .work-content_container {
-    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
+    @apply grid grid-cols-[auto_1fr] items-start gap-5 bg-opacity-60 transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
   }
 
   .work-content_logo {
@@ -134,20 +134,20 @@ body {
   }
 
   .work-content_bar {
-    @apply flex-1 w-0.5 mt-4 h-full bg-black-300 group-hover:bg-black-500 group-last:hidden;
+    @apply  w-1 mt-12 h-1/2 bg-[#D8F2A6] group-hover:bg-black-500 group-last:hidden;
   }
 
   /* contact section */
   .contact-container {
-    @apply  relative z-10 sm:px-10 px-5 mt-12;
+    @apply  relative z-10 sm:px-10 px-5 mt-12 border-l-4 bg-[#383F48] bg-opacity-60 border-r-4 border-b-4 border-[#5A6472] rounded-md;
   }
 
   .field-label {
-    @apply text-lg text-white-600;
+    @apply text-lg text-[#F5FCE9] pl-2 border-l-4  border-[#707C8F];
   }
 
   .field-input {
-    @apply w-full bg-black-300 px-5 py-2 min-h-14 rounded-lg placeholder:text-white-500 text-lg text-white-800 shadow-black-200 shadow-2xl focus:outline-none;
+    @apply w-full border-[#7EB11B] border-l-8 border-b-2  bg-[#2f353c] px-5 py-2 min-h-12 rounded-lg placeholder:text-white-500 text-lg text-white-800  shadow-2xl focus:outline-none;
   }
 
   .field-btn {
@@ -184,7 +184,8 @@ body {
   );
 }
 .background-box{
-  background-color: #101113;
+  background-color: #24282E;
+  border-width: 1.26px;
 }
 
 @keyframes wave-animation {

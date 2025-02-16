@@ -51,7 +51,7 @@ export const HeroCanvas = () => {
           </HeroCamera>
 
           <ambientLight intensity={1} />
-          <directionalLight position={[10, 10, 10]} intensity={0.5} />
+          <directionalLight position={[10, 10, 10]} castShadow intensity={1} />
         </Suspense>
       </Canvas>
     </>

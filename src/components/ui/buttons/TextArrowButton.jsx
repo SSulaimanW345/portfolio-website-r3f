@@ -6,7 +6,7 @@ export const TextArrowButton = ({ btnText }) => {
     <>
       <motion.a
         href="#about"
-        className="group relative cursor-pointer p-2 w-44  bg-gray-800 rounded-full overflow-hidden text-white text-center font-semibold"
+        className="group relative cursor-pointer p-2 w-44  bg-[#9EDD22] rounded-full overflow-hidden text-[#2D3239] text-center font-semibold"
         initial={{ x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{

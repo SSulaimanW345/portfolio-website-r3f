@@ -10,7 +10,7 @@ const styleSpan = {
   display: 'block',
   width: '150px',
   height: '150px',
-  border: '4px solid #aaefaa',
+  border: '4px solid #9EDD22',
   borderTop: '4px solid #2D3134',
   borderLeft: '4px solid #2D3134',
   borderRadius: '50%',
@@ -35,7 +35,7 @@ export const SiteLoader = () => {
         <img
           src="assets/loading-gif.gif"
           alt="Loading..."
-          className="w-44 h-44" // Customize the size of the GIF
+          className="w-44 h-44"
           style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
         />
       </div>

@@ -21,9 +21,9 @@ export const ProjectListing = ({ myProjects }) => {
     <>
       {myProjects.map((project, index) => (
         <div class="relative group ">
-          <div className="absolute -inset-1 bg-gradient-to-r from-[#2a5f2a] to-[#1c201c] rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r from-[#2f312f] to-[#323f39] rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
           <motion.div
-            className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200 bg-[#0e0e10]"
+            className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 border border-[#5A6472] rounded-md  shadow-black-200 bg-[#2D3239] bg-opacity-30"
             initial={{ x: -50, opacity: 0 }}
             whileInView={{
               opacity: 1,

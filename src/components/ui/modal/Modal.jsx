@@ -36,7 +36,7 @@ export const Modal = ({ children, handleClose }) => {
     <Backdrop>
       <motion.div
         onClick={(e) => e.stopPropagation()}
-        className="bg-gray-700 py-1 w-[90vw] md:w-3/4 h-4/5 mt-20 overflow-y-scroll z-40 rounded-md flex flex-col items-center "
+        className="bg-gray-700 py-1 w-[90vw] md:w-3/4 h-4/5 mt-20 overflow-y-auto z-40 rounded-md flex flex-col items-center "
         variants={dropIn}
         initial="hidden"
         animate="visible"

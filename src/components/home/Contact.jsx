@@ -73,7 +73,7 @@ export const Contact = () => {
           <img src="/assets/terminal.png" alt="terminal-bg" className="absolute  min-h-screen" />
 
           <div className="contact-container">
-            <h3 className="head-text">Let's talk</h3>
+            <h3 className="head-text ">Let's talk</h3>
             <p className="text-lg text-white-600 mt-20 sm:mt-3">
               Looking to hire a skilled developer who can bring value to your team and lead projects to success? Hire me
               for a great addition to your team and to drive impactful results!

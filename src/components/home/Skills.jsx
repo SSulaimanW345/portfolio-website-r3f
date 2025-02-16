@@ -14,20 +14,24 @@ export const skills = [
 
 export const Skills = () => {
   return (
-    <Section id={'Skills'} title={'My Skills'}>
+    <Section id={'skills'} title={'My Skills'}>
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-3/4 overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-3/4 max-w-screen-lg overflow-hidden">
           {skills.map((skill, index) => (
             <SkillCard
               spotlightUrl={'tension'}
               key={index}
               index={index}
-              className="relative p-6 w-30 h-30 flex flex-col items-center text-center bg-gray-950 shadow-md rounded-2xl border border-gray-600">
-              <img src={skill.icon} alt="Skill Icon" className="w-12 h-12 m-2 rounded-md" />
-              <h3 className="font-semibold text-xl mt-2 mb-3 text-white-600">{skill.name}</h3>
-              <div className="relative flex items-center w-3/4 h-5 border-2 border-gray-600 rounded-full overflow-hidden">
+              className="relative p-4 flex flex-col items-center text-center bg-gray-950 shadow-md rounded-2xl ">
+              <div className="w-3/4 flex items-center rounded-md border-l-2 border-r-2 border-t-2 border-[#D8F2A6] justify-center p-2">
+                <img src={skill.icon} alt="Skill Icon" className="w-14 h-14 m-2 rounded-md" />
+              </div>
+              <h3 className="font-semibold text-xs text-[#24282E] bg-[#CAC302] border-[#F5FCE9] border-2 mt-2 mb-3 px-1">
+                {skill.name}
+              </h3>
+              <div className="relative flex items-center w-3/4 h-5 border-2  border-[#5A6472] rounded-full overflow-hidden">
                 <motion.div
-                  className="h-3 bg-green-500"
+                  className="h-3 bg-[#9EDD22]"
                   initial={{ width: 0 }}
                   whileInView={{ width: `${skill.percentage}%` }}
                   viewport={{ once: true }}

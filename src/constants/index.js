@@ -2,6 +2,7 @@ export const navLinks = [
   {
     id: 1,
     name: 'Home',
+    sectionId: 'home',
     href: '/#home',
     showOnProjects: true,
     isDesktop: true,
@@ -9,6 +10,7 @@ export const navLinks = [
   {
     id: 2,
     name: 'About',
+    sectionId: 'about',
     href: '/#about',
     showOnProjects: false,
     isDesktop: true,
@@ -16,6 +18,7 @@ export const navLinks = [
   {
     id: 3,
     name: 'Work',
+    sectionId: 'work',
     href: '/#work',
     showOnProjects: false,
     isDesktop: true,
@@ -23,6 +26,7 @@ export const navLinks = [
   {
     id: 4,
     name: 'Contact',
+    sectionId: 'contact',
     href: '/#contact',
     showOnProjects: false,
     isDesktop: true,
@@ -30,13 +34,23 @@ export const navLinks = [
   {
     id: 5,
     name: 'Project',
+    sectionId: 'projects',
     href: '/projects',
     showOnProjects: false,
     isDesktop: true,
   },
   {
     id: 6,
+    name: 'Skills',
+    sectionId: 'skills',
+    href: '/#skills',
+    showOnProjects: false,
+    isDesktop: false,
+  },
+  {
+    id: 7,
     name: 'Download CV',
+    sectionId: 'cv',
     href: '/assets/NewJOBCV.pdf',
     showOnProjects: false,
     isDesktop: false,
@@ -75,7 +89,7 @@ export const clientReviews = [
     position: 'Product Manager at SnowFlake',
     img: 'assets/male-avatar-2.png',
     review:
-      'Sulaiman is an exceptional professional with outstanding analytical and problem-solving skills. They have a remarkable ability to identify challenges and find effective solutions quickly. Their dedication and expertise is valuable. It’s a pleasure working with such a talented individual..',
+      'Sulaiman is an exceptional professional with outstanding analytical and problem-solving skills. They have a remarkable ability to identify challenges and find effective solutions quickly. Their dedication and expertise is valuable.',
   },
   {
     id: 3,
@@ -83,7 +97,7 @@ export const clientReviews = [
     position: 'Project Manager at UrbanTech ',
     img: 'assets/male-avatar-3.png',
     review:
-      'I can’t say enough good things about Sulaiman. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+      'I can’t say enough good things about Sulaiman. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.It’s a pleasure working with such a talented individual..',
   },
   {
     id: 4,
@@ -91,7 +105,7 @@ export const clientReviews = [
     position: 'BPM Specialist at GBM',
     img: 'assets/male-avatar-4.png',
     review:
-      'Sulaiman was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+      'Sulaiman was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.He’s also a fantastic team player, always ready to collaborate and support his teammates.',
   },
   {
     id: 5,
@@ -99,13 +113,13 @@ export const clientReviews = [
     position: 'Product Manager at MindCloud',
     img: 'assets/male-avatar-5.png',
     review:
-      'I’ve had the pleasure of working with Sulaiman, and I can confidently say he is an exceptional junior developer. His ability to debug complex issues is truly impressive. Beyond his technical skills, Sulaiman is a natural leader, managing other developers with confidence and clarity. He’s also a fantastic team player, always ready to collaborate and support his teammates.',
+      'I’ve had the pleasure of working with Sulaiman, and I can confidently say he is an exceptional junior developer. His ability to debug complex issues is truly impressive. Beyond his technical skills, Sulaiman is a natural leader, managing other developers with confidence and clarity.',
   },
 ];
 
 export const myProjects = [
   {
-    title: 'AlogoViz  - Algorihtm Visualizer',
+    title: 'AlogoViz  - Algorithm Visualizer',
     desc: 'AlgoViz is a powerful learning and educational tool designed to visualize algorithms in action. Developed as a semester project for the Algorithms course, it takes an array of numbers as a file input and runs around 10 different algorithms, helping users gain a deeper understanding of their logic and performance through interactive, real-time visualizations.',
     subdesc:
       'Built as a unique learning and educational tool with React.js, Tailwind CSS, and JavaScript, AlgoViz provides an interactive and intuitive way to visualize algorithms in action.',

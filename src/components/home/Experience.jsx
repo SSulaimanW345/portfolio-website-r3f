@@ -4,39 +4,29 @@ import { workExperiences } from '../../constants/index.js';
 export const Experience = () => {
   return (
     <Section id={'work'} title={'Work Experience'}>
-      <div className="w-full text-white-600 text-center">
-        <div className="w-full md:flex md:flex-col items-center px-4">
-          <div className="relative max-w-screen-lg md:flex md:flex-row overflow-hidden">
+      <div className="w-full text-[#F5FCE9] text-center">
+        <div className="w-full lg:flex lg:flex-col items-center px-4">
+          <div className="relative max-w-screen-lg lg:flex lg:flex-row gap-x-6 overflow-hidden">
             <motion.div
-              className="absolute top-5 w-0.5 h-50 hidden md:block bg-green-500 left-1/2 "
+              className="absolute top-0 w-0.5 h-1 hidden lg:block bg-[#F5FCE9] left-1/2 rounded-lg"
+              initial={{ height: 0 }}
+              animate={{ height: '85%' }}
+              transition={{ duration: 5, ease: 'easeInOut' }}></motion.div>
+            <motion.div
+              className="absolute top-20 w-0.5 h-full hidden lg:block bg-[#CAC302] left-1/2 ml-2 rounded-lg "
               initial={{ height: 0 }}
               animate={{ height: '100%' }}
-              transition={{ duration: 5, ease: 'easeInOut' }}>
-              <motion.div
-                className="absolute w-0.5 h-0.5   bg-green-500 rounded-full"
-                initial={{ scale: 2, opacity: 1 }}
-                animate={{ scale: 5, opacity: 1 }}
-                transition={{ duration: 1.5, ease: 'easeOut' }}></motion.div>
-              <motion.div
-                className="absolute w-0.5 h-0.5 bottom-0 bg-green-500 rounded-full"
-                initial={{ scale: 0, opacity: 0 }}
-                animate={{ scale: 5, opacity: 1 }}
-                transition={{ duration: 6, ease: 'easeIn' }}></motion.div>
-            </motion.div>
-            {/* <div className="absolute w-1 bg-gray-300 h-full left-1/2 transform -translate-x-1/2"></div> */}
+              transition={{ duration: 5, ease: 'easeInOut' }}></motion.div>
             {workExperiences.map((item, index) => (
               <motion.div
-                className={`md:w-1/2 md:p-2 lg:p-3 h-full ${index % 2 === 0 ? 'md:text-left text-left' : 'text-left md:mt-40 mt-10 '}`}
+                className={`lg:w-1/2 md:p-2 lg:p-3 h-full ${index % 2 === 0 ? 'lg:text-left text-left' : 'text-left lg:mt-40 mt-10 '}`}
                 initial={{ opacity: 1, x: index % 2 === 0 ? -100 : 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2 }}
                 key={index}>
                 <div
                   key={index}
-                  // onClick={() => setAnimationName(item.animation.toLowerCase())}
-                  // onPointerOver={() => setAnimationName(item.animation.toLowerCase())}
-                  // onPointerOut={() => setAnimationName('idle')}
-                  className="work-content_container group bg-[#0c0c0c]">
+                  className="work-content_container group bg-[#2D3239] bg-opacity-70 border-1 border-[#F5FCE9]">
                   <div className="flex flex-col h-full justify-start items-center py-2">
                     <div className="work-content_logo">
                       <img className="w-full h-full rounded-md" src={item.icon} alt="" />
@@ -46,8 +36,10 @@ export const Experience = () => {
                   </div>
 
                   <div className="sm:p-5 px-2.5 py-5">
-                    <p className="font-bold text-white-800">{item.name}</p>
-                    <p className="text-sm mb-5">
+                    <p className="font-bold text-[#F5FCE9] border-[#7EB11B] rounded-md border-t-4 border-r-4">
+                      {item.name}
+                    </p>
+                    <p className="text-sm mb-5 border-[#7EB11B]  border-r-4">
                       {item.pos} -- <span>{item.duration}</span>
                     </p>
                     {/* <p className="group-hover:text-white transition-all ease-in-out duration-500">{item.title}</p> */}
@@ -71,16 +63,10 @@ export const Experience = () => {
                   </div>
                 </div>
                 <motion.div
-                  className={`absolute hidden md:block  w-4 h-0.5 z-50 bg-green-500 ${index % 2 === 0 ? 'md:right-1/2 top-1/4 ' : 'md:left-1/2 top-3/4'} `}
+                  className={`absolute hidden lg:block  w-4 h-0.5 z-50  ${index % 2 === 0 ? 'md:right-1/2 top-1/4 bg-[#F5FCE9]' : 'md:left-1/2 ml-2 top-3/4 bg-[#CAC302]'} `}
                   initial={{ width: 0 }}
                   animate={{ width: '4%' }}
-                  transition={{ duration: 5, ease: 'easeInOut' }}>
-                  <motion.div
-                    className={`absolute hidden md:block w-0.5 h-0.5 ${index % 2 === 0 ? 'md:left-0 right-0 ' : 'right-0'}   bg-green-500 rounded-full `}
-                    initial={{ scale: 2, opacity: 1 }}
-                    animate={{ scale: 5, opacity: 1 }}
-                    transition={{ duration: 1.5, ease: 'easeOut' }}></motion.div>
-                </motion.div>
+                  transition={{ duration: 5, ease: 'easeInOut' }}></motion.div>
               </motion.div>
             ))}
           </div>

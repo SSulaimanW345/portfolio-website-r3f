@@ -29,7 +29,7 @@ export const SkillCard = ({ children, spotlightUrl, index }) => {
   };
   return (
     <motion.div
-      className="relative p-4 rounded-md border-2 border-black-300 bg-black-200"
+      className="relative p-6 max-w-xs max-h-sm rounded-md border-2 border-[#5A6472] bg-[#2D3239] bg-opacity-50"
       initial={{ x: -50, opacity: 0 }}
       transition={{
         delay: index * 0.1,
@@ -44,7 +44,7 @@ export const SkillCard = ({ children, spotlightUrl, index }) => {
         className={cn('group relative rounded-lg  overflow-hidden  mx-auto')}>
         {isHovered && (
           <div
-            className="pointer-events-none absolute opacity-0 z-50 rounded-xl w-full h-full group-hover:opacity-100  transition duration-300 "
+            className="pointer-events-none absolute  z-50 rounded-xl w-full h-full group-hover:opacity-100  transition duration-300 "
             style={{
               background: `
               radial-gradient(
@@ -63,16 +63,10 @@ export const SkillCard = ({ children, spotlightUrl, index }) => {
           }}></div>
         <motion.div
           whileHover={{ scale: 1.2 }}
-          className={`relative  border-black-300 bg-black-200 w-30 h-30 flex flex-col items-center text-center rounded-2xl  z-10 px-0 py-10  h-full mx-auto`}>
+          className={`relative  border-black-300  w-30 h-30 flex flex-col items-center text-center rounded-2xl  z-10 px-0 py-4  h-full mx-auto`}>
           {children}
         </motion.div>{' '}
       </div>
     </motion.div>
-    // <div className="w-full max-w-[422px] mx-auto [background:linear-gradient(45deg,#080b11,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent animate-border ">
-    //   <div
-    //     className={$`relative text-center z-10 px-0 py-16 rounded-2xl  w-fit bg-[${spotlightUrl}])]  h-full mx-auto`}>
-    //     {children}
-    //   </div>
-    // </div>
   );
 };

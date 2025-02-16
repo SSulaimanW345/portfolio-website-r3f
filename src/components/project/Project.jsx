@@ -1,5 +1,12 @@
 import { useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+const borderVariants = {
+  initial: { opacity: 0, x: -50 }, // Initially no border
+  hover: {
+    transition: { duration: 0.2, ease: 'easeInOut' },
+    scale: 1.3, // Smooth transition
+  },
+};
 export const Project = ({ project, onClickHandler }) => {
   return (
     <>
@@ -12,7 +19,7 @@ export const Project = ({ project, onClickHandler }) => {
       </div>
 
       <div className="flex flex-col gap-5 text-white-600 my-5">
-        <p className="text-white text-2xl font-semibold animatedText">{project.title}</p>
+        <p className="text-[#F5FCE9] text-2xl font-semibold animatedText">{project.title}</p>
         <p className="animatedText">{project.desc}</p>
       </div>
 
@@ -27,7 +34,7 @@ export const Project = ({ project, onClickHandler }) => {
         <div className="flex items-center gap-2 cursor-pointer text-white-600">
           {project.moreDetails && (
             <motion.div
-              className="flex items-center gap-2 mx-2 cursor-pointer text-white-600"
+              className="flex items-center gap-2 mx-2 pb-1 border-b-2 border-[#9EDD22] cursor-pointer text-white-600"
               onClick={() => onClickHandler(project)}>
               <p>More Details</p>
               <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
@@ -36,7 +43,7 @@ export const Project = ({ project, onClickHandler }) => {
           {project.checkLiveSite && (
             <motion.div>
               <a
-                className="flex items-center mx-2 gap-2 cursor-pointer text-white-600"
+                className="flex items-center mx-2 gap-2 pb-1 rounded-sm border-b-2 border-[#9EDD22]  cursor-pointer text-white-600"
                 href={project.liveSiteUrl}
                 target="_blank"
                 rel="noreferrer">
