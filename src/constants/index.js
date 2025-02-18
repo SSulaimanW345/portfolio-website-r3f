@@ -47,14 +47,14 @@ export const navLinks = [
     showOnProjects: false,
     isDesktop: false,
   },
-  {
-    id: 7,
-    name: 'Download CV',
-    sectionId: 'cv',
-    href: '/assets/NewJOBCV.pdf',
-    showOnProjects: false,
-    isDesktop: false,
-  },
+  // {
+  //   id: 7,
+  //   name: 'Download CV',
+  //   sectionId: 'cv',
+  //   href: '/assets/NewJOBCV.pdf',
+  //   showOnProjects: false,
+  //   isDesktop: false,
+  // },
 ];
 export const projectOptions = [
   { value: 'react', label: '⚛️ React' },

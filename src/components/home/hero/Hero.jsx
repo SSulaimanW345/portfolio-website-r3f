@@ -27,9 +27,9 @@ export const Hero = () => {
         <HeroButtons />
       </div>
       <HeroContent />
-      <div className="hidden sm:block fixed top-32 right-4 z-50">
+      {/* <div className="hidden sm:block fixed top-32 right-4 z-50">
         <ResumeDownloadButton />
-      </div>
+      </div> */}
     </section>
   );
 };
